@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Table</title>
+    <!-- Include DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+</head>
+<body>
+    <table id="example" class="display">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jane Doe</td>
+                <td>Software Engineer</td>
+                <td>San Francisco</td>
+                <td>29</td>
+                <td>2020/01/15</td>
+                <td>$120,000</td>
+            </tr>
+            <tr>
+                <td>John Smith</td>
+                <td>Project Manager</td>
+                <td>New York</td>
+                <td>45</td>
+                <td>2015/03/23</td>
+                <td>$150,000</td>
+            </tr>
+            <tr>
+                <td>Emily Johnson</td>
+                <td>Data Scientist</td>
+                <td>Chicago</td>
+                <td>34</td>
+                <td>2018/07/11</td>
+                <td>$135,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- Include DataTables JS -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+    </script>
+</body>
+</html>
